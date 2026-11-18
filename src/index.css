@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: #f6fafa;
+    color: #0f2d2b;
+    overflow-x: clip;
+  }
+}
+
+.font-serif-book {
+  font-family: var(--font-serif);
+}
+
+.font-mono-math {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Scientific math fraction & radical formatting inside textbook explanations */
+.math-frac {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 3px;
+  line-height: 1.25;
+}
+
+.math-frac > span {
+  padding: 0 5px;
+  font-size: 0.9em;
+}
+
+.math-frac > span:first-child {
+  border-bottom: 1.5px solid currentColor;
+}
+
+.math-sqrt {
+  white-space: nowrap;
+}
+
+.math-sqrt-bar {
+  border-top: 1.5px solid currentColor;
+  padding: 0 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

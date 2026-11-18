@@ -1,0 +1,8 @@
+{
+  "name": "Lab Latihan HOTS Kinematika",
+  "description": "Aplikasi latihan soal HOTS Fisika SMA Kinematika Gerak Lurus interaktif lengkap dengan stimulus visual ilmiah, pembahasan buku teks 6 tahap, dan narator suara guru berbahasa Indonesia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
